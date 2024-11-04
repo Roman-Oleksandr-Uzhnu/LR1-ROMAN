@@ -4,12 +4,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f5faff; /* Легкий блакитний фон */
+  background-color: #f5faff;
 }
 
-/* Заголовок */
 header {
-  background-color: #003366; /* Темний блакитний */
+  background-color: #003366;
   color: #fff;
   padding: 15px 0;
   text-align: center;
@@ -17,7 +16,6 @@ header {
   font-weight: bold;
 }
 
-/* Фільтри */
 .filters {
   display: flex;
   justify-content: center;
@@ -30,16 +28,14 @@ header {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  transition: border-color 0.3s;
   color: #003366;
-  background-color: #e6f2ff; /* Світлий блакитний */
+  background-color: #e6f2ff;
 }
 
 .filters select:hover, .filters input:hover {
   border-color: #003366;
 }
 
-/* Стиль для карток фільмів */
 .movies {
   display: flex;
   flex-wrap: wrap;
@@ -62,7 +58,7 @@ header {
 .movie-card:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  border: 2px solid #ff6600; /* Помаранчевий акцент */
+  border: 2px solid #ff6600;
 }
 
 .movie-card img {
@@ -71,7 +67,6 @@ header {
   margin-bottom: 10px;
 }
 
-/* Стиль для модального вікна */
 .modal {
   display: none;
   position: fixed;
@@ -87,7 +82,7 @@ header {
 .modal-content {
   background-color: #fff;
   padding: 20px;
-  width: 800px; /* Збільшена ширина модального вікна */
+  width: 800px;
   max-width: 90%;
   border-radius: 8px;
   position: relative;
@@ -95,27 +90,20 @@ header {
 }
 
 .modal-body {
-  display: flex; /* Встановлюємо флекс для горизонтального розташування */
+  display: flex;
 }
 
 .modal-text {
-  flex: 1; /* Текст займатиме вільний простір */
-  padding-right: 20px; /* Відступ праворуч для тексту */
+  flex: 1;
+  padding-right: 20px;
 }
 
 .modal-image {
-  width: 250px; /* Збільшена ширина зображення */
-  height: auto; /* Автоматичне збереження пропорцій */
-  margin-left: 20px; /* Відступ зліва для зображення */
+  width: 250px;
+  height: auto;
+  margin-left: 20px;
 }
 
-/* Додаємо відступ для зображення */
-.modal-image {
-  margin-top: 10px; /* Відступ зверху */
-  margin-bottom: 10px; /* Відступ знизу */
-}
-
-/* Стиль для закриття модального вікна */
 .close {
   position: absolute;
   top: 10px;
@@ -127,5 +115,29 @@ header {
 }
 
 .close:hover {
-  color: #ff6600; /* Помаранчевий акцент */
+  color: #ff6600;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-card {
+    width: 150px;
+    padding: 10px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .modal-body {
+    flex-direction: column;
+  }
+
+  .modal-image {
+    margin: 0 auto;
+  }
 }

@@ -7,9 +7,8 @@
     <title>Фільми</title>
 </head>
 <body>
-    <header>
-        Список Фільмів
-    </header>
+    <header>Список Фільмів</header>
+
     <div class="filters">
         <select id="genreFilter">
             <option value="">Виберіть жанр</option>
@@ -30,7 +29,10 @@
         </select>
         <input type="text" id="search" placeholder="Пошук фільмів...">
     </div>
-    <div id="movieContainer" class="movies"></div>
+
+    <div id="movieContainer" class="movies">
+        <p id="noResultsMessage" style="display: none;">Нічого не знайдено</p>
+    </div>
 
     <div id="movieModal" class="modal">
         <div class="modal-content">
