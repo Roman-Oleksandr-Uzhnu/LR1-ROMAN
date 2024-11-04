@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: hotpink; /* Рожевий колір */
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 10px dotted purple; /* Пунктирний бордер */
+}
+
+h2 {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.job-title {
+    color: #999999; /* Сірий колір */
+    font-weight: bold;
+    position: relative;
+    top: -10px; /* Піднімає заголовок трохи вище */
+    left: 0;
+}
+
+a:link, a:visited {
+    color: #fb6542;
+}
+
+a:hover {
+    color: green;
+    text-decoration: none;
+}
+
+ul {
+    background-color: #eeeeee;
+    border: 5px solid purple;
+    padding: 10px;
+}
+
+ul li {
+    margin-bottom: 10px; /* Відступ між елементами списку */
+}
+
+ul li:last-child {
+    margin-bottom: 0; /* Забирає відступ у останнього елемента */
+}
+
+#article {
+    background: 
+        url('star.svg') right top no-repeat scroll, 
+        url('star.svg') right bottom no-repeat scroll;
+    border: solid blue;
+    border-width: 20px 15px;
+    padding: 30px calc(3em) 5px calc(3em); /* Відступ: 30px зверху, 5px знизу, потрійна висота шрифту зліва і справа */
+    height: 150px;
+    overflow-y: auto; /* Вертикальний скрол */
+    margin: 30px 10px; /* Зовнішній відступ: 30px зверху та знизу, 10px зліва та справа */
+    border-radius: 100px / 20px; /* Закруглені кути */
+}
+
+.green-text {
+    color: green; /* Зелений колір для тексту */
+}
+
+#article .rtl {
+    direction: rtl;
+    color: rgb(47, 183, 68);
+}
