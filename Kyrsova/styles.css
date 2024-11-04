@@ -1,0 +1,131 @@
+/* Загальний стиль сторінки */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5faff; /* Легкий блакитний фон */
+}
+
+/* Заголовок */
+header {
+  background-color: #003366; /* Темний блакитний */
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Фільтри */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.filters select, .filters input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+  color: #003366;
+  background-color: #e6f2ff; /* Світлий блакитний */
+}
+
+.filters select:hover, .filters input:hover {
+  border-color: #003366;
+}
+
+/* Стиль для карток фільмів */
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.movie-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ff6600; /* Помаранчевий акцент */
+}
+
+.movie-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Стиль для модального вікна */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 800px; /* Збільшена ширина модального вікна */
+  max-width: 90%;
+  border-radius: 8px;
+  position: relative;
+  color: #003366;
+}
+
+.modal-body {
+  display: flex; /* Встановлюємо флекс для горизонтального розташування */
+}
+
+.modal-text {
+  flex: 1; /* Текст займатиме вільний простір */
+  padding-right: 20px; /* Відступ праворуч для тексту */
+}
+
+.modal-image {
+  width: 250px; /* Збільшена ширина зображення */
+  height: auto; /* Автоматичне збереження пропорцій */
+  margin-left: 20px; /* Відступ зліва для зображення */
+}
+
+/* Додаємо відступ для зображення */
+.modal-image {
+  margin-top: 10px; /* Відступ зверху */
+  margin-bottom: 10px; /* Відступ знизу */
+}
+
+/* Стиль для закриття модального вікна */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #003366;
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: #ff6600; /* Помаранчевий акцент */
+}

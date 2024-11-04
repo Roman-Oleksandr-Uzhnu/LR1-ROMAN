@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Фільми</title>
+</head>
+<body>
+    <header>
+        Список Фільмів
+    </header>
+    <div class="filters">
+        <select id="genreFilter">
+            <option value="">Виберіть жанр</option>
+        </select>
+        <select id="directorFilter">
+            <option value="">Виберіть режисера</option>
+        </select>
+        <select id="releaseYearFilter">
+            <option value="">Виберіть рік випуску</option>
+        </select>
+        <select id="languageFilter">
+            <option value="">Виберіть мову</option>
+        </select>
+        <select id="sortOption">
+            <option value="title">Сортувати за назвою</option>
+            <option value="rating">Сортувати за рейтингом</option>
+            <option value="releaseYear">Сортувати за роком випуску</option>
+        </select>
+        <input type="text" id="search" placeholder="Пошук фільмів...">
+    </div>
+    <div id="movieContainer" class="movies"></div>
+
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-text">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDirector"></p>
+                    <p id="modalGenre"></p>
+                    <p id="modalYear"></p>
+                    <p id="modalLanguage"></p>
+                    <p id="modalRating"></p>
+                    <p id="modalActors"></p>
+                    <p id="modalDuration"></p>
+                    <p id="modalBudget"></p>
+                    <p id="modalDescription"></p>
+                    <a id="modalTrailer" href="#" target="_blank">Переглянути трейлер</a>
+                </div>
+                <img id="modalImage" src="" alt="Movie Image" class="modal-image">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
